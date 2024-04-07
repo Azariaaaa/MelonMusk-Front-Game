@@ -1,0 +1,17 @@
+html, body {
+    height: 100%;
+}
+.background{
+    height: 100%;
+    background-color: black;
+    color: black;
+}
+.center{
+    text-align: center;
+}
+.color-orange{
+    color: rgb(255, 102, 0);
+}
+.white{
+    color: white;
+}
