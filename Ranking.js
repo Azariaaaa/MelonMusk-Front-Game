@@ -1,4 +1,11 @@
-CreateANewGame();
+let registered = localStorage.getItem("registered")
+
+if(registered == "false"){
+    CreateANewGame();
+    localStorage.setItem("registered", true);
+    console.log(localStorage.getItem("registered"));
+}
+
 GetTwentyBestGames();
 
 async function GetTwentyBestGames() {
@@ -70,4 +77,5 @@ async function CreateANewGame(){
     } catch (error) {
         console.error("Error: " + error);
     }
+    return null;
 }

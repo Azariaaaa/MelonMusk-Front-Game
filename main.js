@@ -14,6 +14,7 @@ setInterval(() => {
   if(currentTime == 0){
     addScoreToBestScore();
     localStorage.setItem("playerScore", playerScore);
+    localStorage.setItem("registered", false)
     window.location.href = "RankingPage.html";
   }
   else{
