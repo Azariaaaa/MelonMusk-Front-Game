@@ -16,7 +16,8 @@
             <div class="form-group col-2 mx-auto">
                 <div class="mb-3">
                     <label class="white" for="pseudo">Pseudo</label>
-                    <input type="text" class="form-control" id="pseudo" name="pseudo">
+                    <p class="error text-danger small d-none" id="error">Caractères ou longueur du pseudo non autorisée.</p>
+                    <input type="text" class="form-control" id="pseudo" name="pseudo" minlength="2" maxlength="16" required>
                 </div>
             </div>
             <button type="button" class="btn btn-outline-light mb-3" onclick="SendPseudoToDatabase()">Start</button>
